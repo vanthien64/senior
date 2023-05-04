@@ -1,0 +1,19 @@
+<div class="signin">
+    <div class="signin_main">
+        <img src="../../assets/img/img-homepage_background.jpeg" alt="" class="signin-main_img">
+        <div class="signin-main_background"> </div>
+    </div>
+    <div class="signin-content">
+        <div class="signin-content_main">
+            <p class="signin-content_main_header"> TVTNIX</p>
+            <p class="signin-content_main_extra"> Your Feeling Is My Feeling</p>
+            <form #signin="ngForm" (ngSubmit)="signinn(signin.value)" class="formsignin">
+            <input  name="email"  [ngModel] type="text" type="text" class="signin-content_main_input " placeholder="Enter your email" autocomplete="off">
+            <input name="password"  [ngModel] type="text" type="password" class="signin-content_main_input " placeholder="Enter your password" autocomplete="off">
+            <button class="signin-content_main_button">Sign In </button>
+            <p class="signin-content_main_signup"> Create an new account? <span class="signup" routerLink="/signup"> Sign up</span></p>
+            </form>
+        </div>
+
+    </div>
+</div>

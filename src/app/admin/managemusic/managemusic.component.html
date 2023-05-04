@@ -1,0 +1,159 @@
+<div class="manageuser">
+  <headeradmin></headeradmin>
+ <siderbaradmin></siderbaradmin>
+<div class="manageuser-table">
+  <div class="manageuser-table_main_header">
+    <p class="manageuser-table_main_header_id">ID</p>
+    <p class="manageuser-table_main_header_img">IMAGE</p>
+    <p class="manageuser-table_main_header_name">NAME</p>
+    <p class="manageuser-table_main_header_singer">SINGER</p>
+    <p class="manageuser-table_main_header_point">POINT</p>
+    <p class="manageuser-table_main_header_status">STATUS</p>
+    <p class="manageuser-table_main_header_action">ACTION</p>
+  </div>
+  <div class="manageuser-table_main">
+    <div class="manageuser-table_main_content mot" *ngFor="let user of users; let i=index">
+      <p class="manageuser-table_main_content_id">{{user.id}}</p>
+      <p class="manageuser-table_main_content_img"><img src="{{user.img}}" alt="" class="manageuser-table_main_content_img_detail"></p>
+      <p class="manageuser-table_main_content_name">{{user.name}}</p>
+      <p class="manageuser-table_main_content_singer">{{user.singer}}</p>
+      <p class="manageuser-table_main_content_point">{{user.point}}</p>
+      <p class="manageuser-table_main_content_status">{{user.status}}</p>
+      <p class="manageuser-table_main_content_action">
+          <i class="fa-solid fa-trash" (click)="delete(user.id,i)"></i>
+          <i class="fa-solid fa-pen" (click)="updatesong(user)"></i>
+      </p>
+    </div>
+    
+  </div>
+  <button class="manageuser-table_addusser" (click)="addnewcreate()">Add New Song <i class="fa-solid fa-plus"></i></button>
+  <div class="background" [class.backgroun]="backgroun" (click)="remove()"></div>
+  <form #newuser="ngForm" (ngSubmit)="create(newuser.value)" class="create-user" [class.add]="add">
+    <p class="create-user_header">CREATE NEW SONG</p>
+    <input
+          name="name"
+          [ngModel]
+          type="text"
+          class="create-user_input"
+          placeholder="Enter song's name"
+          autocomplete="off"
+        />
+        <input
+          name="singer"
+          [ngModel]
+          type="text"
+          class="create-user_input"
+          placeholder="Enter singer's name"
+          autocomplete="off"
+        />
+        <input
+        name="point"
+        [ngModel]
+        type="text"
+        class="create-user_input"
+        placeholder="Enter song's point"
+        autocomplete="off"
+      />
+      <input
+      name="source"
+      [ngModel]
+      type="text"
+      class="create-user_input"
+      placeholder="Enter song's source"
+      autocomplete="off"
+    />
+    <input
+    name="img"
+    [ngModel]
+    type="text"
+    class="create-user_input"
+    placeholder="Enter song's img"
+    autocomplete="off"
+  />
+    <input
+    name="status"
+    [ngModel]
+    type="text"
+    class="create-user_input"
+    placeholder="Enter song's status"
+    autocomplete="off"
+  />
+  <button class="create-user_button">Submit</button>
+  </form>
+
+
+
+  <form #update="ngForm" (ngSubmit)="updateinfor(update.value)" class="update-user" [class.addupdate]="addupdate">
+    <p class="update-user_header">UPDATE FLIM'S INFORMATION</p>
+    <input
+    name="id"
+    ngModel="{{id}}"
+    [ngModel]
+    type="text"
+    class="update-user_input"
+    placeholder="Enter movie's name"
+    autocomplete="off"
+    readonly
+  />
+    <input
+          name="name"
+          ngModel="{{name}}"
+          [ngModel]
+          type="text"
+          class="update-user_input"
+          placeholder="Enter movie's name"
+          autocomplete="off"
+        />
+        <input
+          name="singer"
+          [ngModel]
+          ngModel="{{singer}}"
+          type="text"
+          class="update-user_input"
+          placeholder="Enter director's name"
+          autocomplete="off"
+        />
+        <input
+        name="point"
+        [ngModel]
+        ngModel="{{point}}"
+        type="text"
+        class="update-user_input"
+        placeholder="Enter movie's point"
+        autocomplete="off"
+      />
+      <input
+      name="source"
+      ngModel="{{source}}"
+      [ngModel]
+      type="text"
+      class="update-user_input"
+      placeholder="Enter movie's source"
+      autocomplete="off"
+    />
+    <input
+    name="img"
+    ngModel="{{img}}"
+    [ngModel]
+    type="text"
+    class="update-user_input"
+    placeholder="Enter movie's img"
+    autocomplete="off"
+  />
+
+    <input
+    name="status"
+    ngModel="{{status}}"
+    [ngModel]
+    type="text"
+    class="update-user_input"
+    placeholder="Enter movie's status"
+    autocomplete="off"
+  />
+  <button class="update-user_button">Submit</button>
+  </form>
+
+
+
+
+</div>

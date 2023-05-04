@@ -1,0 +1,404 @@
+@keyframes an
+{
+ from
+ {
+opacity: 1;
+ }
+to
+{
+opacity: 0;
+}
+
+}
+@keyframes hien
+{
+ from
+ {
+opacity: 0;
+ }
+to
+{
+opacity: 1;
+}
+
+}
+
+.singer
+{
+width:85%;
+height:950px;
+margin-left: 15%;
+background-color:#292929;
+}
+.singer-header
+{
+width:100%;
+height: 40%;
+background-repeat: no-repeat;
+background-size:100% 100%;
+background-position:top;
+background-clip: padding-box;
+position: relative;
+z-index: 13 ;
+animation: hien 1s ease-in;
+}
+.singer-header_main
+{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0px;
+    padding-top:2%;
+    margin-left:6%;
+    width:15%;
+    text-align: center;
+}
+.singer-header_main_img
+{
+    width:16%;
+    height: 52%;
+    border-radius: 50%;
+    margin-top: 22%;
+    margin-left: 5%;
+    border: 3px solid white;
+}
+.fa-check
+{
+    color:white;
+    font-size: 13px;
+    position: absolute;
+    top:133%;
+    left:22%;
+    border: 1px solid #2d7ac2;
+    border-radius: 50%;
+    padding:0.3%;
+    background-color: #2d7ac2;
+}
+.singer-main
+{
+    width:100%;
+    height: 100%;
+    margin-top: 14%;
+    background-color:#292929;
+}
+.singer-main_header
+{
+display: flex;
+margin-left: 5%;
+}
+.fa-play
+{
+    color:white;
+    font-size: 23px;
+    border: 1px solid #6e2222;
+    border-radius: 50%;
+    padding:1% 1.2%;
+    background-color: #6e2222;
+    display: none;
+    width:1.5%;
+    cursor: pointer;
+}
+.fa-pause
+{
+    color:white;
+    font-size: 23px;
+    border: 1px solid #6e2222;
+    border-radius: 50%;
+    padding:1% 1.2%;
+    background-color: #6e2222;
+    display: none;
+    width:1.5%;
+    cursor: pointer;
+}
+.singer-main_header_detail
+{
+    color:white;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    margin-left: 3%;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding:1% 2%;
+    display: none;
+    width:6%;
+    cursor: pointer;
+}
+.singer-main_header_detail_unfl
+{
+    color:white;
+    font-size: 20px;
+    width:6%;
+    margin: 0;
+    margin-left: 3%;
+    text-align: center;
+    border: 1px solid #6e2222;;
+    border-radius: 16px;
+    padding:1% 2%;
+    background-color: #6e2222;
+    display: none;
+    cursor: pointer;
+}
+.singer-main_body
+{
+ margin-top: 20%;
+ margin-left: 5%;
+ height: 30%;
+}
+.singer-main_body_header
+{
+    font-size: 24px;
+    color:white;
+    font-weight: 600;
+}
+.singer-main_body_detail
+{
+    width: 95%;
+    height: 20%;
+}
+.singer-main_body_detail_content
+{
+ display:flex;
+ width: 60%;
+ height: 100%;
+ margin-top: 2%;
+}
+.singer-main_body_detail_content_order
+{
+ width:5%;
+ text-align: center;
+ color:white;
+}
+.singer-main_body_detail_content_img
+{
+ width:8%;
+ height: 90%;
+ margin-top: 2px;
+ margin-left: 8%;
+ border: 0.2px solid white;
+ border-radius: 4px;
+ object-fit: over;
+}
+.singer-main_body_detail_content_name
+{
+    width:32%;
+    margin-left: 7%;
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.singer-main_body_detail_content_views
+{
+ width:20%;
+ color:white;
+ opacity: 0.7;
+}
+.singer-main_body_detail_content_duration
+{
+ width:7%;
+ color:white;
+ opacity: 0.7;
+}
+.singer-main_content
+{
+    margin-top: 17%;
+    margin-left: 5%;
+    height: 30%;
+}
+.singer-main_content_header
+{
+    font-size: 24px;
+    color:white;
+    font-weight: 600;
+    margin: 0px;
+}
+
+
+.music-singer
+{
+    width:100%;
+    height: 100%;
+}
+.music-singer_header
+{
+    width:95%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    margin-right: 4.5%;
+}
+.music-singer_header::-webkit-scrollbar { 
+    display: none; 
+  }
+
+  .music-singer_header_main
+{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 7%;
+    width:15%;
+    transition: transform;
+}
+.music-singer_header_main:hover
+{
+    transform: scale(1.1);
+}
+.music-singer_header_main:hover .music-singer_header_main_img
+{
+    box-shadow: 0px 0px 5px 3px white;
+}
+.music-singer_header :first-child
+{
+  margin-left: 1%;
+}
+.music-singer_header :last-child
+{
+  padding-right: 5%;
+}
+.music-singer_header_main_img
+{
+   width:135%;
+   height: 200px; 
+   margin-bottom: 2%;
+   border-radius: 16px;
+   box-shadow: 0px 0px 5px 3px rgb(159, 159, 159);
+   object-fit: cover;
+   cursor: pointer;
+}
+.thien
+{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.music-singer_header_main_deatil
+{
+    color:white;
+    font-weight: 600;
+    font-size: 14px;
+    width:110px;
+    height: 50px;
+    text-align: center;
+}
+.hien{
+    animation: an 1s ease-out forwards;
+}
+.add{
+display: block;
+}
+.unadd{
+    display: block;
+    }
+    .thanhnghe
+{
+    width:100%;
+    height: 80px;
+    background-color: rgb(71, 71, 71);
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    right: 0px;
+    z-index: 15;
+    display: none;
+}
+.fa-music
+{
+    font-size: 30px;
+    padding:20px 18px;
+    margin-left: 50px;
+    margin-top:2%;
+    border-radius: 50%;
+    background-color: rgb(216, 208, 208);
+}
+.thongtin
+{
+    display: flex;
+}
+.thongtinchinh
+{
+ color:white;
+ font-weight: 600;
+ margin: 0px;
+ margin-left: 5%;
+ margin-top: 12%;
+ width:200px;
+
+}
+.thongtinphu
+{
+    color:white;
+    margin: 0px;
+    margin-left: 5%;
+    margin-top: 2%;
+    width:200px;
+}
+audio
+{
+    width:60%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 0.3%;
+
+}
+.addplay
+{
+    display: flex;
+}
+.hi
+{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    padding:10% 25% 10% 15%;
+    border-radius:50%;
+    top:26%;
+    left:48%;
+    display:none;
+    background-color: #292929;
+    width:0%
+}
+.hihi
+{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    padding:10% 25% 10% 15%;
+    border-radius:50%;
+    top:26%;
+    left:48%;
+    display:none;
+    background-color: #292929;
+    width:0%
+}
+.music-album_header_main:hover .add
+{
+    display:block;
+}
+.music-singer_header_main:hover .add
+{
+    display:block;
+}
+.play
+{
+    display: block;
+}
+.pla
+{
+    transform: scale(1.1);
+}
+.pl
+{
+    box-shadow: 0px 0px 5px 3px white;
+}
+.quay
+{
+    animation: spin 3s infinite;
+}
+.audio
+{
+display: none;
+}

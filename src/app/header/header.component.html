@@ -1,0 +1,8 @@
+<div class="header">
+  <div class="header-main">
+    <img src="../../assets/img/logo.png" alt="" class="header-main_logo" />
+    <button class="header-main_signout" [class.siderbarout]="siderbarout" (click)="signout()">Sign out</button>
+    <button class="header-main_signin" [class.siderbar]="siderbar" routerLink="/signin">Sign In</button>
+    <button class="header-main_signup" [class.siderbar]="siderbar" routerLink="/signup">Sign Up</button>
+  </div>
+</div>

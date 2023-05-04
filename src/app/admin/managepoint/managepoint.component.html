@@ -1,0 +1,30 @@
+<div class="manageuser">
+  <headeradmin></headeradmin>
+ <siderbaradmin></siderbaradmin>
+  
+    <div class="manageuser-table">
+      <div class="manageuser-table_main_header">
+        <p class="manageuser-table_main_header_id">ID</p>
+        <p class="manageuser-table_main_header_img">IMAGE</p>
+        <p class="manageuser-table_main_header_name">NAME</p>
+        <p class="manageuser-table_main_header_email">POSITON</p>
+        <p class="manageuser-table_main_header_role">PRICE</p>
+        <p class="manageuser-table_main_header_action">ACTION</p>
+      </div>
+      <div class="manageuser-table_main">
+        <div class="manageuser-table_main_content mot" *ngFor="let booking of bookings">
+          <p class="manageuser-table_main_content_id">{{booking.id}}</p>
+          <p class="manageuser-table_main_content_img"><img src="{{booking.img}}" alt="" class="manageuser-table_main_content_img_detail"></p>
+          <p class="manageuser-table_main_content_name">{{booking.name}}</p>
+          <p class="manageuser-table_main_content_email">{{booking.position}}</p>
+          <p class="manageuser-table_main_content_role">{{booking.price}}</p>
+          <p class="manageuser-table_main_content_action">
+              <i class="fa-solid fa-trash"></i>
+          </p>
+        </div>
+        
+      </div>
+      <button class="manageuser-table_addusser">Add New User <i class="fa-solid fa-plus"></i></button>
+    </div>
+  </div>
+  

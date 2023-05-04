@@ -1,0 +1,116 @@
+.signin
+{
+ width:100%;
+ height: 830px;
+}
+.signin-main_
+{
+opacity: 0.5;
+}
+.signin-main_img
+{
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+.signin-main_background
+{
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background-color: black;
+    opacity: 0.5;
+}
+.signin-content
+{
+ position: absolute;
+ top:15%;
+ bottom:15%;
+ left:30%;
+ right:30%;
+ background-color: rgba(255, 255, 255, 0.7);
+ border-radius: 26px;
+ box-shadow: 0px 0px 10px 5px white;
+
+}
+.signin-content_main
+{
+    width: 100%;
+    height: 80%;
+}
+.signin-content_main_header
+{
+font-size: 60px;
+margin: 0px;
+margin-left: 32%;
+margin-top: 5%;
+}
+.signin-content_main_extra
+{
+    font-size: 16px;
+    margin: 0px;
+    margin-left: 34%;
+    margin-top: 2%;
+    font-style: italic;
+}
+.formsignin
+{
+    width:100%;
+    height: 100%;
+}
+.signin-content_main_input 
+{
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    width: 80%;
+    height: 14%;
+    margin-top: 6%;
+    margin-left: 8%;
+    padding-left:5%;
+    font-size: 16px;
+}
+.signin-content_main_input:focus
+{
+outline: none;
+}
+.signin-content_main_button
+{
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border-radius: 30px;
+    width: 85%;
+    height: 14%;
+    margin-top: 5%;
+    margin-left: 8%;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.signin-content_main_forgotpassword
+{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+    margin-left: 70%;
+    margin-top: 2%;
+    cursor: pointer;
+
+}
+.signin-content_main_signup
+{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 32%;
+    margin-top: 4%;
+}
+.signup
+{
+    color:white;
+    cursor: pointer;
+}

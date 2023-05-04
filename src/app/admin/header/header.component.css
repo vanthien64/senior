@@ -1,0 +1,47 @@
+.manabooking-header
+{
+    width:84%;
+    height: 8%;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    position:fixed;
+    top:1.5%;
+    left:15%;
+}
+.form
+{
+    width:60%;
+    height: 80%;
+    position: relative;
+}
+.manabooking-header_input
+{
+    width:60%;
+    height: 70%;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 22px;
+    margin-top: 2%;
+    margin-left: 50%;
+}
+.manabooking-header_input::placeholder
+{
+padding-left: 12%;
+font-size: 14px;
+}
+.fa-magnifying-glass
+{
+position: absolute;
+left:53%;
+top:50%;
+}
+.manabooking-header_img
+{
+    width:4%;
+    height: 65%;
+    border-radius: 50%;
+    border: 1px solid #3d808a;
+    margin-top:0.9%;
+    margin-left: 30%;
+}

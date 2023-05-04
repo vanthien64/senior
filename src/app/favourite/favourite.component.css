@@ -1,0 +1,171 @@
+@keyframes an
+{
+ from
+ {
+opacity: 1;
+ }
+to
+{
+opacity: 0;
+}
+
+}
+@keyframes hien
+{
+ from
+ {
+opacity: 0;
+ }
+to
+{
+opacity: 1;
+}
+}
+.favourite
+{
+    width: 85%;
+    height: 850px;
+    margin-left: 15%;
+}
+.favourite-header
+{
+ width:100%;
+ height: 40%;
+ background-image: linear-gradient(to right, #222222, rgb(88, 87, 87));
+ display:flex;
+ position: relative;
+ z-index: 13;
+ animation: hien 0.5s ease-in;
+}
+.favourite-header_detail
+{
+ margin: 0px;
+ font-size:60px;
+ color:white;
+ margin-top: 13%;
+ margin-left: 3%;
+}
+.fa-heart
+{
+    margin: 0px;
+    font-size:60px;
+    color:rgb(255, 255, 255);
+    padding:7%;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border: 1px solid #141414;
+    background-color: #141414;
+    border-radius: 12px;
+    box-shadow: 1px 4px 5px 3px rgb(56, 56, 56);
+}
+.favourite-main
+{
+ width:100%;
+ height: 80%;
+ background-color: #252525;
+}
+.favourite-main_header
+{
+width: 95%;
+margin-left: 2.5%;
+height: 12%;
+border-bottom:1px solid rgb(255, 255, 255, 0.3);
+}
+.fa-plus
+{
+    font-size: 15px;
+    padding:1%;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 4%;
+    margin-left: 9%;
+    color:white;
+}
+.favourite-main_detail
+{
+    color:white;
+    display: inline-block;
+    margin-left: 1%;
+}
+.favourite-main_body
+{
+ width:100%;
+ height: 88%;
+}
+.favourite-main_body_music
+{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 48%;
+    border-bottom:1px solid rgb(255, 255, 255, 0.3)  ;
+    padding-top: 4%;
+}
+.favourite-main_body_music_header
+{
+    color:white;
+    font-size: 30px;
+    margin: 0px;
+    margin-left: 3%;
+}
+
+.favourite-main_body_movie
+{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 48%;
+    border-bottom:1px solid rgb(255, 255, 255, 0.3)  ;
+    padding-top: 4%;
+}
+.favourite-main_body_movie_header
+{
+    color:white;
+    font-size: 30px;
+    margin: 0px;
+    margin-left: 3%;
+}
+
+.favourite-main_body_news
+{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 28%;
+    padding-top: 4%;
+}
+.favourite-main_body_news_header
+{
+    color:white;
+    font-size: 30px;
+    margin: 0px;
+    margin-left: 3%;
+}
+.hien{
+    animation: an 0.5s ease-out forwards;
+}
+.main{
+    width:100%;
+    height: 75%;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.infor
+{
+    width:20%;
+    height: 100%;
+}
+.infor-img
+{
+    width:80%;
+    height: 80%;
+    cursor: pointer;
+}
+.infor-detail
+{
+    color:white;
+    font-weight: 600;
+    font-size: 14px;
+}
+.audio{
+display: none;
+}

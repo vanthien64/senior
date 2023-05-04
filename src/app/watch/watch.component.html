@@ -1,0 +1,32 @@
+<header></header>
+<siderbar [class.add]="add"></siderbar>
+<div class="blackground" [class.add]="add" (click)="blackground()"></div>
+<div class="watch">
+    <i class="fa-solid fa-bars" (click)="siderbar()"></i>
+
+
+    <div class="watch-header">
+        <video #ve controls src="{{movie[id].source}}" class="watch-header_video" (pause)="pause()"> </video>
+        <div class="watch-header_video_background" [class.them]="khoa" style="background-image: url({{movie[id].backgound}});">
+            <i class="fa-solid fa-play" [class.them]="hiennutplay" (click)="music(ve)"></i>
+        </div>
+        <p class="watch-header_detail">Best rap movie 2022, {{movie[id].name}}</p>
+        <p class="watch-header_extra">The movie celebrates the luxurious life of Ba Tra's beauty, the singer and her younger brother Tu Nhi, the film is decapitated and romantically linked to the wife in a remote village.</p>
+        <i class="fa-solid fa-heart"></i> <span class="siderbar-header_main_content" (click)="yeuthich(id)">Favourite</span>
+    </div>
+
+
+
+
+
+    <div class="watch-main">
+        <div class="watch-main_content" (click)="choice(noibat.id-1)" *ngFor="let noibat of outstanding">
+            <img src="{{noibat.img}}" alt="" class="watch-main_content_img">
+            <div class="thien">
+            <p class="watch-main_content_detail">{{noibat.name}}</p>
+            <p class="watch-main_content_extra">{{noibat.director}}</p>
+            <p class="watch-main_content_point">{{noibat.point}}</p>
+            </div>
+        </div>
+    </div>
+</div>

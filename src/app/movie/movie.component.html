@@ -1,0 +1,45 @@
+<header></header>
+<siderbar></siderbar>
+<div class="movie">
+    <div class="movie-header">
+        <p class="movie-header_detail"> Hot Movie</p>
+        <div class="movie-header_main">
+            <div class="movie-header_main_content" *ngFor="let hot of hots, let i=index">
+                <img src="{{hot.img}}" alt="" class="movie-header_main_content_img" (click)="movie(i)">
+                <p class="movie-header_main_content_detail">{{hot.name}}</p>
+                <p class="movie-header_main_content_director">Director: {{hot.director}}</p>
+                <p class="movie-header_main_content_point">Point: {{hot.point}}</p>
+                <i class="fa-regular fa-heart" (click)="yeuthich(hot.id)"></i>
+            </div>
+            </div>
+        </div>
+
+
+
+    <div class="movie-body">
+        <p class="movie-body_detail"> New Movie</p>
+        <div class="movie-body_main">
+            <div class="movie-body_main_content" *ngFor="let new of news, let i=index">
+                <img src="{{new.img}}" alt="" class="movie-body_main_content_img" (click)="movie(i)">
+                <p class="movie-header_main_content_detail">{{new.name}}</p>
+                <p class="movie-header_main_content_director"> Director: {{new.director}}</p>
+                <p class="movie-header_main_content_point">Point: {{new.point}}</p>
+                <i class="fa-regular fa-heart" (click)="yeuthich(new.id)"></i>
+            </div>
+            </div>
+    </div>
+
+
+    <div class="movie-footer">
+        <p class="movie-footer_detail"> For You</p>
+        <div class="movie-footer_main">
+            <div class="movie-footer_main_content" *ngFor="let flim of flims, let i=index">
+                <img src="{{flim.img}}" alt="" class="movie-footer_main_content_img" (click)="movie(i)">
+                <p class="movie-header_main_content_detail">{{flim.name}}</p>
+                <p class="movie-header_main_content_director">Director: {{flim.director}}</p>
+                <p class="movie-header_main_content_point">Point: {{flim.point}}</p>
+                <i class="fa-regular fa-heart" (click)="yeuthich(flim.id)"></i>
+            </div>
+    </div>
+</div>
+</div>

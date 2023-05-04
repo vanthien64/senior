@@ -1,0 +1,104 @@
+.manageuser-siderbar
+{
+    width:15%;
+    height: 100%;
+    background-color: #f1f1f1;
+    position:fixed;
+    top:1.5%;
+    left:0px;
+    bottom:0px;
+}
+.manageuser-siderbar_logo
+{
+    width:55%;
+    height: 8%;
+    padding: 5% 14%;
+    margin-left: 4%;
+    background-color: white;
+    border-radius: 5px;
+}
+.manageuser-siderbar_function
+{
+    margin-top:6%;
+    margin-left: 4%;
+    width:85%;
+    height: 70%;
+}
+.fa-house
+{
+ color:#b3b1b1;
+ font-size: 24px;
+ width:20%;
+ margin-left: 10%;
+ margin-top: 8%;
+ cursor: pointer;
+}
+.fa-user
+{
+    color:#b3b1b1;
+    font-size: 24px;
+    width:20%;
+    margin-left: 10%;
+    cursor: pointer;
+    margin-top: 8%;
+}
+.fa-music
+{
+    color:#b3b1b1;
+    font-size: 24px;
+    width:20%;
+    margin-left: 10%;
+    cursor: pointer;
+    margin-top: 8%;
+}
+.fa-film
+{
+    color:#b3b1b1;
+    font-size: 24px;
+    width:20%;
+    margin-left: 10%;
+    cursor: pointer;
+    margin-top: 8%;
+}
+.fa-microphone
+{
+    color:#b3b1b1;
+    font-size: 24px;
+    width:20%;
+    margin-left: 10%;
+    cursor: pointer;
+    margin-top: 8%;
+}
+.fa-arrow-right-from-bracket
+{
+
+    color:#b3b1b1;
+    font-size: 24px;
+    width:20%;
+    margin-left: 10%;
+    cursor: pointer;
+    margin-top: 8%;
+}
+.manageuser-siderbar_function_detail
+{
+    font-size: 17px;
+    color:#454545;
+    cursor: pointer;
+}
+.line
+{
+    width:90%;
+    height: 0.2%;
+    background-color:#b3b1b1;
+    margin-top: 175%;
+}
+.mainnn
+{
+width: 110%;
+height: 10%;
+cursor: pointer;
+}
+.mainnn:hover
+{
+  background-color: #ffffff;
+}

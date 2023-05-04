@@ -1,0 +1,61 @@
+<header></header>
+<siderbar></siderbar>
+<div class="music">
+
+  <div class="music-album">
+      <p class="music-album_detail">OUTSTANDING</p>
+
+      <div class="music-album_header" >
+        <div class="music-album_header_main" *ngFor="let music of outstanding">
+          <img
+            src="{{music.img}}"
+            alt=""
+            class="music-album_header_main_img"
+          />
+          <i class="fa-solid fa-play" [class.add]="hiennutplay"  (click)="choice(ve,music)"></i>
+          <i class="fa-solid fa-pause" [class.add]="hiennutpause" [class.play]="hiennutpause" (click)="choice(ve,music)"></i>
+
+          <div class="thien">
+            <p class="music-album_header_main_deatil">{{music.name}} </p>
+          </div>
+            <audio controls #ve class="audio">
+              <source src="{{music.source}}" type="audio/ogg">
+            </audio>
+            <i class="fa-regular fa-heart" (click)="yeuthich(music.id)"></i>
+        </div>
+        </div>
+        </div>
+
+
+
+    <div class="music-singer">
+      <p class="music-singer_detail">SINGER</p>
+
+      <div class="music-singer_header" >
+        <div class="music-singer_header_main" *ngFor="let singer of singers,let i=index" (click)="choicesinger(i)">
+          <img
+            src="{{singer.img}}"
+            alt=""
+            class="music-singer_header_main_img"
+          />
+          <div class="thien">
+            <p class="music-singer_header_main_deatil">{{singer.name}} </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="thanhnghe" [class.song]="song">
+      <div class="thongtin"><i class="fa-solid fa-music"></i>
+        <div>
+      <p class="thongtinchinh">{{name}}</p>
+      <p class="thongtinphu">{{namesinger}}</p>
+        </div>
+      </div>
+    </div>
+
+
+</div>

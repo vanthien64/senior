@@ -1,0 +1,51 @@
+<header></header>
+<siderbar></siderbar>
+<div class="singer" (window:scroll)="srcoll()">
+    <div class="singer-header" [class.hien]="hien" style="background-image: url({{singers[idsinger].backgound}});">
+
+        <img src="{{singers[idsinger].img}}" alt="" class="singer-header_main_img">
+        <p class="singer-header_main"> {{singers[idsinger].name}}</p>
+        <i class="fa-solid fa-check"></i>
+    </div>
+
+    <div class="singer-main">
+        <div class="singer-main_body">
+                <p class="singer-main_body_header">Popular</p>
+                <div class="singer-main_body_detail" *ngFor="let thi of thie, let i=index">
+                    <div class="singer-main_body_detail_content">
+                        <p class="singer-main_body_detail_content_order">{{i+1}}</p>
+                        <img src="{{song[thi].img}}" alt="" class="singer-main_body_detail_content_img" (click)="music(ve)">
+                        <p class="singer-main_body_detail_content_name">{{song[thi].name}}</p>
+              
+                    </div>
+                    <audio controls #ve class="audio">
+                      <source src="{{song[thi].source}}" type="audio/ogg">
+                    </audio>
+                   </div>
+        </div>
+
+
+
+        <div class="singer-main_content">
+            <p class="singer-main_content_header">List song</p>
+            <div class="music-singer">
+                <div class="music-singer_header">
+                  <div class="music-singer_header_main" [class.pla]="hiennutpause" *ngFor="let thi of thi">
+                    <img
+                      src="{{song[thi-1].img}}"
+                      alt=""
+                      class="music-singer_header_main_img"
+                      (click)="music(ve)"
+                    />        
+                    <div class="thien">
+                      <p class="music-singer_header_main_deatil">{{song[thi-1].name}}</p>
+                    </div>
+                    <audio controls #ve class="audio">
+                      <source src="{{song[thi-1].source}}" type="audio/ogg">
+                    </audio>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

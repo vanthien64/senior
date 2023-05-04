@@ -1,0 +1,86 @@
+.siderbar
+{
+width:15%;
+height:841px;
+background-color: black;
+position: fixed;
+top:0px;
+left:0px;
+bottom:0px;
+z-index: 12;
+}
+.siderbar-header{
+width: 100%;
+height: 30%;
+}
+.siderbar-header_img
+{
+ width:80%;
+ height: 20%;
+ margin-top: 7%;
+ margin-left: 5%;
+}
+.sider-header_img_extra
+{
+    width: 80%;
+    height: 25%;
+    margin-top: -25%;
+    margin-left: 100%;
+    background-color:#1b1a1a;
+}
+.siderbar-header_main
+{
+    margin-left: 12%;
+    margin-top: 5%;
+}
+.fa-house
+{
+    color:white;
+    font-size:26px;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.fa-tiktok
+{
+    color:white;
+    font-size:26px;
+    margin-top: 15%;
+    cursor: pointer;
+}
+.fa-film
+{
+    color:white;
+    font-size:26px;
+    margin-top: 15%;
+    cursor: pointer;
+}
+.fa-plus
+{
+    color:white;
+    font-size:16px;
+    background-color: rgb(116, 116, 116);
+    margin-top: 15%;
+    border:2px solid rgb(116, 116, 116);
+    border-radius: 4px;
+    padding:2%;
+    cursor: pointer;
+}
+.fa-heart
+{
+    color:white;
+    font-size:16px;
+    margin-top: 15%;
+    background-color: rgb(116, 116, 116);
+    border:2px solid rgb(116, 116, 116);
+    border-radius: 4px;
+    padding:2%;
+    cursor: pointer;
+}
+.siderbar-header_main_content
+{
+    color:white;
+    margin-left: 10%;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}

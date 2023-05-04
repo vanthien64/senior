@@ -1,0 +1,102 @@
+<div class="signup">
+  <div class="signup_main">
+    <img
+      src="../../assets/img/img-homepage_background.jpeg"
+      alt=""
+      class="signup-main_img"
+    />
+    <div class="signup-main_background"></div>
+  </div>
+  <div class="signup-content">
+    <div class="signup-content_main">
+      <p class="signup-content_main_header">TVTNIX</p>
+      <p class="signup-content_main_extra">Your Feeling Is My Feeling</p>
+      <form
+        #signup="ngForm"
+        (ngSubmit)="signupp(signup.value)"
+        class="formsignup"
+      >
+        <input
+          name="fullname"
+          (blur)="blurfullname(fullname.value)"
+          (focus)="focus()"
+          #fullname="ngModel"
+          [ngModel]
+          type="text"
+          class="signup-content_main_input"
+          placeholder="Enter your Fullname"
+          autocomplete="off"
+        />
+        <p
+        class="signup-form_input_notification"
+        [class.notification]="notificationfullname"
+      >
+        {{ detailnotificationfullname }}
+      </p>
+        <input
+          name="email"
+          [ngModel]
+          type="text"
+          class="signup-content_main_input"
+          placeholder="Enter your email"
+          autocomplete="off"
+          (blur)="bluremail(email.value)"
+        (focus)="focus()"
+        #email="ngModel"
+        />
+        <p
+        class="signup-form_input_notification"
+        [class.notification]="notificationemail"
+      >
+        {{ detailnotificationemail }}
+      </p>
+
+        <input
+          name="password"
+          [ngModel]
+          type="{{type}}"
+          class="signup-content_main_input"
+          placeholder="Enter your password"
+          autocomplete="off"
+          (blur)="blurpassword(password.value)"
+          (focus)="focus()"
+          #password="ngModel"
+        />
+        <i class="fa-regular fa-eye eyepass" (click)="showpassword()"></i>
+
+    <p
+      class="signup-form_input_notification"
+      [class.notification]="notificationpassword"
+    >
+      {{ detailnotificationpassword }}
+    </p>
+
+  
+        <input
+          class="signup-content_main_input"
+          type="{{ typeconfirm }}"
+          placeholder="Enter your confirm password"
+          (blur)="blurconfirmpassword(confirmpassword.value,password.value)"
+          (focus)="focus()"
+          [ngModel] 
+          #confirmpassword="ngModel"
+          autocomplete="off"
+        />
+        <i
+          class="fa-regular fa-eye eyecf"
+          (click)="showpasswordconfirm()"
+        ></i>
+      <p
+        class="signup-form_input_notification"
+        [class.notification]="notificationconfirmpassword"
+      >
+        {{ detailnotificationconfirmpassword }}
+      </p>
+        <button class="signup-content_main_button">Sign Up</button>
+        <p class="signup-content_main_signin">
+          Already have an account?
+          <span class="signin" routerLink="/signin"> Sign In</span>
+        </p>
+      </form>
+    </div>
+  </div>

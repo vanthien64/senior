@@ -1,0 +1,37 @@
+
+<header></header>
+<siderbar></siderbar>
+<div class="favourite" (window:scroll)="srcoll()">
+    <div class="favourite-header" [class.hien]="hien">
+      <i class="fa-solid fa-heart"></i>
+        <p class="favourite-header_detail">Your Favourite</p>
+    </div>
+    <div class="favourite-main">
+        <div class="favourite-main_body">
+            <div class="favourite-main_body_music">
+                <p class="favourite-main_body_music_header"> Favourite Song</p>
+                <div class="main">
+                <div class="infor" *ngFor="let so of songs" (click)="nhac(ve)">
+                    <img class="infor-img" src="{{music[so].img}}" alt="">
+                    <p class="infor-detail">{{music[so].name}}</p>
+                    <audio controls #ve class="audio">
+                        <source src="{{music[so].source}}" type="audio/ogg"> 
+                    </audio>
+                </div>
+                </div>
+            </div>
+
+            <div class="favourite-main_body_movie">
+                <p class="favourite-main_body_movie_header">Favourite Movie </p>
+                <div class="main">
+                <div class="infor" *ngFor="let mo of movies" (click)="phim(mo)">
+                    <img class="infor-img" src="{{flim[mo].img}}" alt="">
+                    <p class="infor-detail">{{flim[mo].name}}</p>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>   
